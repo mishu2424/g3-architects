@@ -353,7 +353,7 @@ footer > p{
     /* experience section styles */
     .experience{
         width: 80vw;
-        margin-bottom: 10%;
+        margin-bottom: 15%;
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: repeat(2,auto);
         gap: 30px;
@@ -389,10 +389,13 @@ footer > p{
     /* facts section styles */
     .facts{
         width: 80vw;
-        /* margin-top: 10%; */
+        gap: 20px;
     }
     .facts-cards{
         grid-template-columns: repeat(2,1fr);
+        gap:10px;
+        width: 90%;
+        margin: 0px;
     }
     .facts-description{
         width: 100%;
@@ -400,7 +403,7 @@ footer > p{
     .facts-description>p{
         font-size: 0.8em;
     }
-
+    
 
     /* sponsors section styles */
     .sponsors{
@@ -443,13 +446,14 @@ footer > p{
 
     /* footer section responsive */
     footer{
-        width: 100vw;
+        width: 100%;
         margin-bottom: 0%;
         border-radius: 0px;
-        padding: 0.4em;
+        padding: 0.4em 0px;
+        margin-right: 0px;
     }
     footer > p{
         color: #727272;
-        font-size: 0.8em;
+        font-size: 0.6em;
     }
 }
