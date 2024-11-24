@@ -73,3 +73,32 @@ header{
     height: 100%;
     border-radius: 10px;
 }
+
+/* responsive section */
+/* header section responsive */
+
+.navigation{
+    flex-direction: column;
+}
+.navigation h3{
+    font-size: 2em;
+}
+.navigation ul li{
+    font-size: 1em;
+    padding-right: 2em;
+}
+/* banner */
+.banner-details{
+    width: 100%;
+}
+.banner-details> h1{
+    font-size: 1.5em;
+}
+.banner-details > p{
+    color: #727272;
+    font-size: 0.8em;
+}
+.btn-primary{
+    border-radius: 8px;
+    padding: 0.8em;
+}
