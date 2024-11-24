@@ -47,7 +47,7 @@ header{
 }
 .banner-details{
     text-align: center;
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
 }
 .banner-details> h1{
@@ -74,31 +74,99 @@ header{
     border-radius: 10px;
 }
 
+/* main section styles */
+/* feature section styles */
+.features{
+    width: 70vw;
+    margin: 3% auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+}
+.image-collage{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:10px;
+}
+.child-container{
+    /* border: 1px solid skyblue; */
+    border-radius: 10px;
+}
+.child-container > img{
+    width: 100%;
+    height: 100%;
+}
+.features-decsription{
+    /* border: 1px solid skyblue; */
+    margin: auto;
+    width: 80%;
+}
+.features-decsription>h1{
+    margin: 0px;
+    font-size: 3em;
+}
+.features-decsription>p{
+    color: #727272;
+    font-size: 1em;
+}
 /* responsive section */
 /* header section responsive */
 
-.navigation{
-    flex-direction: column;
-}
-.navigation h3{
-    font-size: 2em;
-}
-.navigation ul li{
-    font-size: 1em;
-    padding-right: 2em;
-}
-/* banner */
-.banner-details{
-    width: 100%;
-}
-.banner-details> h1{
-    font-size: 1.5em;
-}
-.banner-details > p{
-    color: #727272;
-    font-size: 0.8em;
-}
-.btn-primary{
-    border-radius: 8px;
-    padding: 0.8em;
+@media screen and (max-width:576px) {
+    .navigation{
+        flex-direction: column;
+    }
+    .navigation h3{
+        font-size: 2em;
+    }
+    .navigation ul li{
+        font-size: 1em;
+        padding-right: 2em;
+    }
+    /* banner */
+    .banner-details{
+        width: 100%;
+    }
+    .banner-details> h1{
+        font-size: 1.5em;
+    }
+    .banner-details > p{
+        color: #727272;
+        font-size: 0.8em;
+    }
+    .btn-primary{
+        border-radius: 8px;
+        padding: 0.8em;
+    }
+    /* features section styles */
+    .features{
+        width: 80vw;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .image-collage{
+        grid-template-columns: repeat(1,1fr);
+        gap:10px;
+    }
+    .child-container{
+        /* border: 1px solid skyblue; */
+        border-radius: 10px;
+    }
+    .child-container > img{
+        width: 100%;
+        height: 100%;
+    }
+    .features-decsription{
+        /* border: 1px solid skyblue; */
+        margin: 10px 0px;
+        width: 80%;
+    }
+    .features-decsription>h1{
+        margin: 0px;
+        font-size: 2em;
+    }
+    .features-decsription>p{
+        font-size: 0.8em;
+    }
+    
 }
