@@ -165,6 +165,60 @@ header{
 }
 
 
+/* sponsors section styles */
+.sponsors{
+    width: 70vw;
+    margin: 3% auto;
+    display: grid;
+    grid-template-columns: repeat(1,100%);
+    grid-template-rows: auto;
+    gap: 30px;
+}
+.sponsor-description{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.sponsor-description>h3{
+    font-size: 1.2em;
+    margin: 0.4em;
+}
+.sponsor-description>p{
+    color: #bb1818;
+    font-size: 1em;
+    margin: 0px;
+}
+.sponsor-logos{
+    /* using flex */
+    /* display: flex;
+    align-items: center;
+    justify-content: space-around; */
+    /* using grid */
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap:20px;
+}
+.sponsor-logos img{
+    width: 7em;
+    height: 3em;
+    filter: grayscale(100%);
+}
+
+/* footer section styles */
+
+footer{
+    width: 70vw;
+    margin: 3% auto;
+    border-radius: 8px;
+    background-color: #f7e8d8;
+    text-align: center;
+    padding: 0.4em;
+}
+footer > p{
+    color: #727272;
+    font-size: 1em;
+}
+
 
 
 
@@ -248,5 +302,75 @@ header{
     .facts-description>p{
         font-size: 0.8em;
     }
-    
+
+
+    /* sponsors section styles */
+    .sponsors{
+        width: 80vw;
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        grid-template-rows: auto;
+        gap: 30px;
+    }
+    .sponsor-description{
+        width: 100%;
+    }
+    .sponsor-description>h3{
+        margin: 0px;
+    }
+    .sponsor-description>p{
+        font-size: 0.8em;
+        margin: 0px;
+    }
+    .sponsor-logos{
+        /* using flex */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* using grid */
+        /* display: grid;
+        grid-template-columns: repeat(5,1fr);
+        gap:20px; */
+    }
+    .sponsor-logos img{
+        width: 2em;
+        height: 1em;
+        filter: grayscale(100%);
+    }
+    /* .sponsor-logos > img:nth-of-type(5){
+        padding-left: 20px;
+    } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* footer section responsive */
+    footer{
+        width: 100vw;
+        border-radius: 0px;
+        padding: 0.4em;
+    }
+    footer > p{
+        color: #727272;
+        font-size: 0.8em;
+    }
 }
